@@ -1,0 +1,1335 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>TopG DK Portofolio</title>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+    integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+    crossorigin="anonymous"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+
+  <style>
+    body {
+      background-color:black;
+      position: relative;
+    }
+
+    svg {
+      position: fixed;
+    }
+
+    .btn {
+      transition: .5s ease-in-out;
+    }
+
+    body .heading {
+      transition: .5s ease-in-out;
+      color: #F57D1F;
+
+    }
+
+    body .heading:hover {
+      transition: .5s ease-in-out;
+      letter-spacing: 5px;
+      color: #F57D1F;
+      text-shadow:
+        0px 0px 10px rgba(247, 32, 233, 0.96),
+        0px 0px 20px rgba(99, 7, 67, 0.932),
+        0px 0px 30px rgba(237, 111, 205, 0.959),
+        0px 0px 20px rgba(99, 7, 67, 0.932),
+        0px 0px 20px rgba(221, 152, 197, 0.932);
+    }
+
+    .navbar .btn {
+      box-shadow:
+        0px 0px 0px rgba(238, 224, 32, 0.96),
+        0px 0px 0px rgba(61, 236, 21, 0.932),
+        0px 0px 0px rgba(4, 55, 207, 0.959),
+        0px 0px 0px rgba(186, 16, 16, 0.959),
+        0px 0px 0px rgba(58, 214, 238, 0.959),
+        3px 3px 1px rgba(242, 242, 28, 0.959);
+    }
+
+    #Start {
+      padding: 100px 0px;
+      display: flex;
+      flex-wrap: wrap-reverse;
+      justify-content: space-around;
+      font-size: xx-large;
+      align-items: center;
+      font-weight: 500;
+      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
+
+    #Start span {
+      transition: .5s ease-in-out;
+    }
+
+    #Start span:hover {
+      transition: .3s ease-in-out;
+      font-size: 35px;
+      text-shadow:
+        0px 0px 10px rgba(255, 255, 255, 0.96);
+    }
+
+
+    #Start img {
+      width: 250px;
+      height: 250px;
+      transition: .5s ease-in-out;
+    }
+
+    #Start img:hover {
+      width: 300px;
+      height: 300px;
+      transition: .5s ease-in-out;
+    }
+
+    #Start .role {
+      transition: .7s ease-in-out;
+      font-size: 50px;
+      text-shadow:
+        0px 0px 10px rgba(32, 238, 70, 0.96),
+        0px 0px 20px rgba(68, 246, 28, 0.932),
+        0px 0px 30px rgba(88, 242, 28, 0.959);
+    }
+
+    #Start .role:hover {
+      transition: .5s ease-in-out;
+      font-size: 50px;
+      word-spacing: 10px;
+      letter-spacing: 3px;
+      text-shadow:
+        0px 0px 15px rgba(32, 238, 70, 0.96),
+        0px 0px 25px rgba(68, 246, 28, 0.932),
+        0px 0px 35px rgba(88, 242, 28, 0.959),
+        0px 0px 45px rgba(88, 242, 28, 0.959),
+        0px 0px 55px rgba(88, 242, 28, 0.959),
+        0px 0px 65px rgba(88, 242, 28, 0.959);
+
+    }
+
+    #Aboutme {
+      padding-top: 60px;
+      font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }
+
+    #Aboutme span {
+      color: white;
+      line-height: 55px;
+      padding-top: 10px;
+      transition: .7s ease-in-out;
+
+    }
+
+    #Aboutme .span1 {
+      color: white;
+      font-size: 20px;
+      padding-top: 10px;
+      transition: .7s ease-in-out;
+    }
+
+    #Aboutme .span2 {
+      color: white;
+      font-size: 20px;
+      padding-top: 10px;
+      transition: .7s ease-in-out;
+    }
+
+    #Aboutme .span3 {
+      color: white;
+      font-size: 20px;
+      padding-top: 10px;
+      transition: .7s ease-in-out;
+    }
+
+    #Aboutme .span4 {
+      color: white;
+      font-size: 20px;
+      padding-top: 10px;
+      transition: .7s ease-in-out;
+    }
+
+    #Aboutme .span5 {
+      color: white;
+      font-size: 20px;
+      padding-top: 10px;
+      transition: .7s ease-in-out;
+    }
+
+    #Aboutme .span1:hover {
+      color: white;
+      font-size: 25px;
+      padding-top: 10px;
+      transition: .3s ease-in-out;
+    }
+
+    #Aboutme .span2:hover {
+      color: white;
+      font-size: 25px;
+      padding-top: 10px;
+      transition: .3s ease-in-out;
+    }
+
+    #Aboutme .span3:hover {
+      color: white;
+      font-size: 25px;
+      padding-top: 10px;
+      transition: .3s ease-in-out;
+    }
+
+    #Aboutme .span4:hover {
+      color: white;
+      font-size: 25px;
+      padding-top: 10px;
+      transition: .3s ease-in-out;
+    }
+
+    #Aboutme .span5:hover {
+      color: white;
+      font-size: 25px;
+      padding-top: 10px;
+      transition: .3s ease-in-out;
+    }
+
+    #Skills {
+      font-size: larger;
+      padding-top: 50px;
+    }
+
+    #Skills .container {
+      scrollbar-width: none;
+    }
+
+    .skill1 b {
+      transition: .7s ease-in-out;
+    }
+
+    .skill1 b:hover {
+      text-shadow:
+        0px 0px 15px rgba(238, 224, 32, 0.96),
+        0px 0px 25px rgba(61, 236, 21, 0.932),
+        0px 0px 35px rgba(4, 55, 207, 0.959),
+        0px 0px 45px rgba(186, 16, 16, 0.959),
+        0px 0px 55px rgba(58, 214, 238, 0.959),
+        0px 0px 65px rgba(242, 242, 28, 0.959);
+      letter-spacing: 5px;
+      transition: .3s ease-in-out;
+    }
+
+    .skill2 b {
+      transition: .7s ease-in-out;
+    }
+
+    .skill2 b:hover {
+      text-shadow:
+        0px 0px 15px rgba(238, 224, 32, 0.96),
+        0px 0px 25px rgba(61, 236, 21, 0.932),
+        0px 0px 35px rgba(4, 55, 207, 0.959),
+        0px 0px 45px rgba(186, 16, 16, 0.959),
+        0px 0px 55px rgba(58, 214, 238, 0.959),
+        0px 0px 65px rgba(242, 242, 28, 0.959);
+      letter-spacing: 5px;
+      transition: .3s ease-in-out;
+    }
+
+    .skill3 b {
+      transition: .7s ease-in-out;
+    }
+
+    .skill3 b:hover {
+      text-shadow:
+        0px 0px 15px rgba(238, 224, 32, 0.96),
+        0px 0px 25px rgba(61, 236, 21, 0.932),
+        0px 0px 35px rgba(4, 55, 207, 0.959),
+        0px 0px 45px rgba(186, 16, 16, 0.959),
+        0px 0px 55px rgba(58, 214, 238, 0.959),
+        0px 0px 65px rgba(242, 242, 28, 0.959);
+      letter-spacing: 5px;
+      transition: .3s ease-in-out;
+    }
+
+    .skill4 b {
+      transition: .7s ease-in-out;
+    }
+
+    .skill4 b:hover {
+      text-shadow:
+        0px 0px 15px rgba(238, 224, 32, 0.96),
+        0px 0px 25px rgba(61, 236, 21, 0.932),
+        0px 0px 35px rgba(4, 55, 207, 0.959),
+        0px 0px 45px rgba(186, 16, 16, 0.959),
+        0px 0px 55px rgba(58, 214, 238, 0.959),
+        0px 0px 65px rgba(242, 242, 28, 0.959);
+      letter-spacing: 5px;
+      transition: .3s ease-in-out;
+    }
+
+    .skill5 b {
+      transition: .7s ease-in-out;
+    }
+
+    .skill5 b:hover {
+      text-shadow:
+        0px 0px 15px rgba(238, 224, 32, 0.96),
+        0px 0px 25px rgba(61, 236, 21, 0.932),
+        0px 0px 35px rgba(4, 55, 207, 0.959),
+        0px 0px 45px rgba(186, 16, 16, 0.959),
+        0px 0px 55px rgba(58, 214, 238, 0.959),
+        0px 0px 65px rgba(242, 242, 28, 0.959);
+      letter-spacing: 5px;
+      transition: .3s ease-in-out;
+    }
+
+    #Work {
+      padding-top: 80px;
+    }
+
+    #Work .container {}
+
+
+
+    .carousel {
+      width: 50%;
+      transition: .3s ease-in-out;
+    }
+
+
+    .project {
+      display: flex;
+      flex-wrap: nowrap;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .projectphoto1 .heading {
+      font-weight: 700;
+      font-size: larger;
+      text-shadow:
+        0px 0px 15px rgba(238, 224, 32, 0.96),
+        0px 0px 25px rgba(61, 236, 21, 0.932),
+        0px 0px 35px rgba(4, 55, 207, 0.959),
+        0px 0px 45px rgba(186, 16, 16, 0.959),
+        0px 0px 55px rgba(58, 214, 238, 0.959),
+        0px 0px 65px rgba(242, 242, 28, 0.959);
+      transition: .3s ease-in-out;
+    }
+
+    .projectphoto1 .content {
+      line-height: 50px;
+      font-weight: 200;
+      font-size: large;
+      transition: .6s ease-in-out;
+
+    }
+
+    .projectphoto1 .content:hover {
+      line-height: 60px;
+      font-weight: 400;
+      font-size: larger;
+      transition: .3s ease-in-out;
+
+    }
+
+
+    #Contact .content {
+      font-size: larger;
+      line-height: 60px;
+    }
+
+    a {
+      color: white;
+    }
+
+    #Contact a {
+      transition: 1s ease-in-out;
+    }
+
+    #Contact a:hover {
+      transition: .2s ease-in-out;
+      text-shadow:
+        0px 0px 15px rgba(39, 32, 238, 0.96),
+        0px 0px 25px rgba(251, 78, 20, 0.932),
+        0px 0px 35px rgba(149, 28, 242, 0.959),
+        0px 0px 45px rgba(148, 5, 148, 0.959),
+        0px 0px 55px rgba(228, 48, 204, 0.959),
+        0px 0px 65px rgba(238, 46, 213, 0.959);
+    }
+
+    marquee {
+      text-shadow:
+        0px 0px 15px rgba(245, 155, 38, 0.96),
+        0px 0px 25px rgba(238, 123, 23, 0.932),
+        0px 0px 35px rgba(228, 116, 10, 0.959),
+        0px 0px 45px rgba(246, 76, 45, 0.959),
+        0px 0px 55px rgba(229, 92, 34, 0.959),
+        0px 0px 65px rgba(234, 91, 20, 0.959);
+    }
+
+    marquee:hover {
+      text-shadow:
+        0px 0px 15px rgba(238, 224, 32, 0.96),
+        0px 0px 25px rgba(61, 236, 21, 0.932),
+        0px 0px 35px rgba(4, 55, 207, 0.959),
+        0px 0px 45px rgba(186, 16, 16, 0.959),
+        0px 0px 55px rgba(58, 214, 238, 0.959),
+        0px 0px 65px rgba(242, 242, 28, 0.959);
+
+    }
+
+
+
+    @media (max-width: 575px) {
+
+      body {
+       background-color: black;
+       
+      }
+
+      svg {
+        position: fixed;
+      }
+
+      .btn {
+        transition: .5s ease-in-out;
+      }
+
+      body .heading {
+        transition: .5s ease-in-out;
+        color: #F57D1F;
+
+      }
+
+      body .heading:hover {
+        transition: .5s ease-in-out;
+        letter-spacing: 3px;
+        color: #F57D1F;
+        text-shadow:
+          0px 0px 10px rgba(247, 32, 233, 0.96),
+          0px 0px 20px rgba(99, 7, 67, 0.932),
+          0px 0px 30px rgba(237, 111, 205, 0.959),
+          0px 0px 20px rgba(99, 7, 67, 0.932),
+          0px 0px 20px rgba(221, 152, 197, 0.932);
+      }
+
+      .navbar .btn {
+        box-shadow:
+          0px 0px 0px rgba(238, 224, 32, 0.96),
+          0px 0px 0px rgba(61, 236, 21, 0.932),
+          0px 0px 0px rgba(4, 55, 207, 0.959),
+          0px 0px 0px rgba(186, 16, 16, 0.959),
+          0px 0px 0px rgba(58, 214, 238, 0.959),
+          3px 3px 1px rgba(242, 242, 28, 0.959);
+      }
+
+      #Start {
+        padding: 50px 0px;
+        display: flex;
+        flex-wrap: wrap-reverse;
+        justify-content: space-around;
+        font-size: xx-large;
+        align-items: center;
+        font-weight: 500;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        background-repeat: no-repeat;
+        background-size: contain;
+      }
+
+      #Start span {
+        transition: .5s ease-in-out;
+        font-size: 20px;
+      }
+
+      #Start span:hover {
+        transition: .3s ease-in-out;
+        font-size: 25px;
+        text-shadow:
+          0px 0px 10px rgba(255, 255, 255, 0.96);
+      }
+
+      #Start .intro {
+        margin: 80px 0px 0px 30px;
+        line-height: 20px;
+      }
+
+
+      #Start img {
+        width: 150px;
+        height: 150px;
+        transition: .5s ease-in-out;
+      }
+
+      #Start img:hover {
+        width: 250px;
+        height: 250px;
+        transition: .5s ease-in-out;
+      }
+
+      #Start .role {
+        transition: .7s ease-in-out;
+        font-size: 20px;
+        text-shadow:
+          0px 0px 10px rgba(32, 238, 70, 0.96),
+          0px 0px 20px rgba(68, 246, 28, 0.932),
+          0px 0px 30px rgba(88, 242, 28, 0.959);
+      }
+
+      #Start .role:hover {
+        transition: .5s ease-in-out;
+        font-size: 20px;
+        word-spacing: 1px;
+        letter-spacing: 2px;
+        text-shadow:
+          0px 0px 15px rgba(32, 238, 70, 0.96),
+          0px 0px 25px rgba(68, 246, 28, 0.932),
+          0px 0px 35px rgba(88, 242, 28, 0.959),
+          0px 0px 45px rgba(88, 242, 28, 0.959),
+          0px 0px 55px rgba(88, 242, 28, 0.959),
+          0px 0px 65px rgba(88, 242, 28, 0.959);
+
+      }
+
+      #Aboutme {
+        padding-top: 50px;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+      }
+
+      #Aboutme span {
+        color: white;
+        line-height: 30px;
+        padding-top: 1+0px;
+        transition: .7s ease-in-out;
+
+      }
+
+      #Aboutme .span1 {
+        color: white;
+        font-size: 20px;
+        padding-top: 10px;
+        transition: .7s ease-in-out;
+      }
+
+      #Aboutme .span2 {
+        color: white;
+        font-size: 20px;
+        padding-top: 5px;
+        transition: .7s ease-in-out;
+      }
+
+      #Aboutme .span3 {
+        color: white;
+        font-size: 20px;
+        padding-top: 5px;
+        transition: .7s ease-in-out;
+      }
+
+      #Aboutme .span4 {
+        color: white;
+        font-size: 20px;
+        padding-top: 5px;
+        transition: .7s ease-in-out;
+      }
+
+      #Aboutme .span5 {
+        color: white;
+        font-size: 20px;
+        padding-top: 5px;
+        transition: .7s ease-in-out;
+      }
+
+      #Aboutme .span1:hover {
+        color: white;
+        font-size: 25px;
+        padding-top: 5px;
+        transition: .3s ease-in-out;
+      }
+
+      #Aboutme .span2:hover {
+        color: white;
+        font-size: 25px;
+        padding-top: 5px;
+        transition: .3s ease-in-out;
+      }
+
+      #Aboutme .span3:hover {
+        color: white;
+        font-size: 25px;
+        padding-top: 5px;
+        transition: .3s ease-in-out;
+      }
+
+      #Aboutme .span4:hover {
+        color: white;
+        font-size: 25px;
+        padding-top: 5px;
+        transition: .3s ease-in-out;
+      }
+
+      #Aboutme .span5:hover {
+        color: white;
+        font-size: 25px;
+        padding-top: 5px;
+        transition: .3s ease-in-out;
+      }
+
+      #Skills {
+        font-size: larger;
+        padding-top: 50px;
+
+      }
+
+      #Skills .container {
+        scrollbar-width: none;
+      }
+
+      .skill1 b {
+        transition: .7s ease-in-out;
+      }
+
+      .skill1 b:hover {
+        text-shadow:
+          0px 0px 15px rgba(238, 224, 32, 0.96),
+          0px 0px 25px rgba(61, 236, 21, 0.932),
+          0px 0px 35px rgba(4, 55, 207, 0.959),
+          0px 0px 45px rgba(186, 16, 16, 0.959),
+          0px 0px 55px rgba(58, 214, 238, 0.959),
+          0px 0px 65px rgba(242, 242, 28, 0.959);
+        letter-spacing: 5px;
+        transition: .3s ease-in-out;
+      }
+
+      .skill2 b {
+        transition: .7s ease-in-out;
+      }
+
+      .skill2 b:hover {
+        text-shadow:
+          0px 0px 15px rgba(238, 224, 32, 0.96),
+          0px 0px 25px rgba(61, 236, 21, 0.932),
+          0px 0px 35px rgba(4, 55, 207, 0.959),
+          0px 0px 45px rgba(186, 16, 16, 0.959),
+          0px 0px 55px rgba(58, 214, 238, 0.959),
+          0px 0px 65px rgba(242, 242, 28, 0.959);
+        letter-spacing: 5px;
+        transition: .3s ease-in-out;
+      }
+
+      .skill3 b {
+        transition: .7s ease-in-out;
+      }
+
+      .skill3 b:hover {
+        text-shadow:
+          0px 0px 15px rgba(238, 224, 32, 0.96),
+          0px 0px 25px rgba(61, 236, 21, 0.932),
+          0px 0px 35px rgba(4, 55, 207, 0.959),
+          0px 0px 45px rgba(186, 16, 16, 0.959),
+          0px 0px 55px rgba(58, 214, 238, 0.959),
+          0px 0px 65px rgba(242, 242, 28, 0.959);
+        letter-spacing: 5px;
+        transition: .3s ease-in-out;
+      }
+
+      .skill4 b {
+        transition: .7s ease-in-out;
+      }
+
+      .skill4 b:hover {
+        text-shadow:
+          0px 0px 15px rgba(238, 224, 32, 0.96),
+          0px 0px 25px rgba(61, 236, 21, 0.932),
+          0px 0px 35px rgba(4, 55, 207, 0.959),
+          0px 0px 45px rgba(186, 16, 16, 0.959),
+          0px 0px 55px rgba(58, 214, 238, 0.959),
+          0px 0px 65px rgba(242, 242, 28, 0.959);
+        letter-spacing: 5px;
+        transition: .3s ease-in-out;
+      }
+
+      .skill5 b {
+        transition: .7s ease-in-out;
+      }
+
+      .skill5 b:hover {
+        text-shadow:
+          0px 0px 15px rgba(238, 224, 32, 0.96),
+          0px 0px 25px rgba(61, 236, 21, 0.932),
+          0px 0px 35px rgba(4, 55, 207, 0.959),
+          0px 0px 45px rgba(186, 16, 16, 0.959),
+          0px 0px 55px rgba(58, 214, 238, 0.959),
+          0px 0px 65px rgba(242, 242, 28, 0.959);
+        letter-spacing: 5px;
+        transition: .3s ease-in-out;
+      }
+
+      #Work {
+        padding-top: 60px;
+      }
+
+
+
+      .carousel {
+        width: 75%;
+        transition: .3s ease-in-out;
+      }
+
+      .carousel:hover {
+        width: 100%;
+        transition: .3s ease-in-out;
+      }
+
+      .project {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .project2 {
+        display: flex;
+        flex-wrap: wrap-reverse;
+        justify-content: center;
+      }
+
+      .projectphoto1 .heading {
+        font-weight: 700;
+        font-size: larger;
+        text-shadow:
+          0px 0px 1px rgba(238, 224, 32, 0.96),
+          0px 0px 1px rgba(61, 236, 21, 0.932),
+          0px 0px 20px rgba(4, 55, 207, 0.959),
+          0px 0px 20px rgba(186, 16, 16, 0.959),
+          0px 0px 5px rgba(58, 214, 238, 0.959),
+          0px 0px 6px rgba(242, 242, 28, 0.959);
+        transition: .3s ease-in-out;
+      }
+
+      .projectphoto1 .content {
+        line-height: px;
+        font-weight: 200;
+        font-size: large;
+        transition: .6s ease-in-out;
+      }
+
+      .projectphoto1 .content:hover {
+        line-height: 60px;
+        font-weight: 400;
+        font-size: larger;
+        transition: .3s ease-in-out;
+
+      }
+
+
+      #Contact .content {
+        font-size: 20px;
+        line-height: 40px;
+        margin-bottom: px;
+      }
+
+      a {
+        color: white;
+      }
+
+      #Contact a {
+        transition: 1s ease-in-out;
+      }
+
+      #Contact a:hover {
+        transition: .2s ease-in-out;
+        text-shadow:
+          0px 0px 15px rgba(39, 32, 238, 0.96),
+          0px 0px 25px rgba(251, 78, 20, 0.932),
+          0px 0px 35px rgba(149, 28, 242, 0.959),
+          0px 0px 45px rgba(148, 5, 148, 0.959),
+          0px 0px 55px rgba(228, 48, 204, 0.959),
+          0px 0px 65px rgba(238, 46, 213, 0.959);
+      }
+
+      marquee {
+        text-shadow:
+          0px 0px 15px rgba(245, 155, 38, 0.96),
+          0px 0px 25px rgba(238, 123, 23, 0.932),
+          0px 0px 35px rgba(228, 116, 10, 0.959),
+          0px 0px 45px rgba(246, 76, 45, 0.959),
+          0px 0px 55px rgba(229, 92, 34, 0.959),
+          0px 0px 65px rgba(234, 91, 20, 0.959);
+      }
+
+      marquee:hover {
+        text-shadow:
+          0px 0px 15px rgba(238, 224, 32, 0.96),
+          0px 0px 25px rgba(61, 236, 21, 0.932),
+          0px 0px 35px rgba(4, 55, 207, 0.959),
+          0px 0px 45px rgba(186, 16, 16, 0.959),
+          0px 0px 55px rgba(58, 214, 238, 0.959),
+          0px 0px 65px rgba(242, 242, 28, 0.959);
+
+      }
+
+
+    }
+
+    @media (min-width: 575px) {}
+
+    @media (min-width: 1050px) {}
+  </style>
+
+</head>
+
+
+<body class="" id="body">
+
+  <div id="quote" class=" fw-bold text-center h3 py-2 rounded-2"
+    style="background-image: linear-gradient(to right bottom, #ff094e, #1e07e8,#2685f1, #f10fa2); font-family: 'Arial Narrow', Arial, sans-serif;  color: #ffe414;">
+    <p data-aos="fade-right" data-aos-duration="1000"> Websites that convert, experiences that
+      delight.</p>
+  </div>
+  <header class="sticky-top">
+    <nav class=" sticky-top">
+      <div id="navbar" class="navbar  rounded-bottom-5 navbar-expand-md"
+        style="background-color: rgba(0, 0, 0, 0.3); backdrop-filter: blur(10px);  border-bottom:2px solid #F57D1F;">
+        <div class="heading ms-md-5 ms-3 h4  navbar-brand  fw-bold" style="" data-aos="fade-right" data-aos-offset="0">
+          FrontEnd developer</div>
+        <button class="navbar-toggler btn me-md-5 me-3" style="border:1px solid #F57D1F;" data-bs-toggle="collapse"
+          data-bs-target=".collapse" aria-controls="collapse" aria-expanded="false">
+          <span class="navbar-toggler-ico"><i class="fa-solid fa-bars fa-md" style="color:white;"></i></span>
+        </button>
+        <div class="collapse navbar-collapse me-md-5 ">
+          <ul class="navbar-nav d-flex flex-row  justify-content-around ms-auto mt-md-0 ">
+            <li class="nav-item  px-lg-5 px-md-4 ">
+              <a class="nav-link" href="#Aboutme"><span class="btn btn-outline-light btn-sm"
+                  style="border:1px solid #F57D1F;" data-aos="flip-left"> About me</span></a>
+            </li>
+            <li class="nav-item px-lg-5 px-md-4 ">
+              <a class="nav-link" href="#Skills"><span class="btn btn-outline-light btn-sm"
+                  style="border:1px solid #F57D1F;" data-aos="flip-up"> Skills</span></a>
+            </li>
+            <li class="nav-item px-lg-5 px-md-4 ">
+              <a class="nav-link" href="#Work"><span class="btn btn-outline-light btn-sm"
+                  style="border:1px solid #F57D1F;" data-aos="flip-right"> Work</span></a>
+            </li>
+            <li class="nav-item px-lg-5 px-md-4">
+              <a class="nav-link" href="#Contact"><span class="btn btn-outline-light btn-sm"
+                  style="border:1px solid #F57D1F;" data-aos="flip-down"> Contact</span></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+    </nav>
+  </header>
+
+  <main class="d-flex flex-column">
+    <div id="Start" class="">
+      <div class="intro text-white" style="" data-aos="fade-left" data-aos-duration="1000" data-aos-once="false">
+        <span class="" data-aos="fade-left">Aspiring B.Tech Student</span><br><br>
+        <span class=""> Seeking Dynamic Internship & Part-Time Roles </span><br><br>
+        <span class=""> Ready to Learn and Contribute</span><br><br>
+        <span class="" style="" width=""> As a <span class="role" style="">FrontEnd Developer. . . .
+          </span>
+
+      </div>
+      <div>
+        <img src="for github projrcts/deepak.jpg" data-aos="zoom-out-left" data-aos-duration="1000" class="" style="border-radius: 31% 69% 23% 77% / 66% 18% 82% 34%; border: 1px solid #43e443;
+             box-shadow: 0px 0px 50px 0px rgba(34, 245, 48, 0.911),
+    0px 2px 4px rgba(248, 19, 19, 0.933),
+    0px 4px 8px rgba(84, 255, 49, 0.919),
+    0px 8px 16px rgba(255, 23, 23, 0.946);
+" alt="#">
+      </div>
+    </div>
+    <div id="Aboutme" class="" style="">
+      <div class="container pt-4 text-center">
+        <div class="span1 fs-2 fw-bold " style="color: #F57D1F;" data-aos="zoom-in">**Hi there! **</div><br>
+        <span class=" lh-lg d-flex flex-column  justify-content-center align-items-center">
+          <div class="span2" data-aos="fade-right">I'm <small class="h4 text-warning fw-bold">Deepakkumar</small>, a
+            third year at <small class=" fw-bolder h3 text-secondary">Nandha Engineering College(Autonomous)</small>
+            with a fire in my
+            heart for building
+            user-friendly
+            and impactful web experiences.</div><br>
+
+          <span data-aos="fade-left" class="span3"> I'm drawn to clean, minimalist designs where every element has a
+            purpose. I'm currently
+            diving deep
+            into
+            HTML, CSS, JavaScript, and React, eager to turn my learnings into elegant solutions for real-world
+            challenges.</span><br>
+
+          <span data-aos="fade-right" class="span4"> This portfolio showcases some of my best work. Take a peek to see
+            what I'm capable
+            of!</span><br>
+
+          <span data-aos="fade-left" class="span5">I'm actively seeking internship opportunities to learn from
+            experienced professionals and
+            contribute my
+            skills. If you're looking for a passionate and quick learner with a strong foundation in web development,
+            let's connect!</span>
+        </span>
+      </div>
+    </div>
+
+    <div id="Skills" class=" font-monospace  text-white" style="position: relative;">
+      <div data-aos="zoom-in" class="text-center fw-bold fs-2 pt-3"
+        style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; color: #F57D1F;">Languages
+      </div>
+      <div class="container ">
+
+
+        <div data-aos="flip-right" data-aos-duration="1000"
+          class="container skill1 w-sm-100 w-lg-75 rounded-3 d-flex flex-column mt-4 gap-4"
+          style="height: fit-content; background-color: rgba(75, 74, 74, 0.3);"> <b data-aos="flip-right"
+            data-aos-duration="1000" class="text-center">Front-End
+            Languages</b>
+          <abbr title="HTML - Hypertext Markup Language">
+            <div class="d-flex align-items-center gap-2 w-100">
+              <div class=""> <img
+                  src="https://w7.pngwing.com/pngs/840/443/png-transparent-html-5-logo-web-development-html-css3-canvas-element-web-design-w3c-html5-logo-miscellaneous-text-orange-thumbnail.png"
+                  width="30" alt="">
+              </div>
+              <div class="progress bg-secondary w-100" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
+                <div class="progress-bar progress-bar-striped bg-success w-100"><b>100%</b></div>
+              </div>
+            </div>
+          </abbr>
+          <abbr title="CSS - Cascading Style Sheets">
+            <div class="d-flex align-items-center gap-2 w-100">
+              <div><img
+                  src="https://banner2.cleanpng.com/20180503/thq/kisspng-html-css3-cascading-style-sheets-logo-markup-langu-digital-agency-5aeb5d73ccaf16.1752969515253743238384.jpg"
+                  width="30" alt=""></div>
+              <div class="progress bg-secondary w-100" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
+                <div class="progress-bar progress-bar-striped bg-success w-100"><b>100%</b></div>
+              </div>
+            </div>
+          </abbr>
+          <abbr title="JavaScript">
+            <div class="d-flex align-items-center gap-2 w-100">
+              <div><img src="https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png" width="30" alt="">
+              </div>
+              <div class="progress bg-secondary w-100" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
+                <div class="progress-bar  progress-bar-striped progress-bar-animated"
+                  style="width: 90%; background-color: #2a9f03;"><b>90%</b></div>
+              </div>
+            </div>
+          </abbr>
+        </div>
+
+        <br>
+        <div data-aos="flip-up" data-aos-duration="1000"
+          class="container skill2 w-sm-100 w-lg-75 rounded-3 d-flex flex-column gap-4"
+          style="background-color: rgba(75, 74, 74, 0.3);"><b data-aos="flip-up" data-aos-duration="1000"
+            class="text-center">Frameworks and Libraries</b>
+          <abbr title="React.js">
+            <div class="d-flex align-items-center gap-2">
+              <div><img
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS3YraeeRnBhf1Sd-QQndtiCYLL5RTFWDhvjcooa9c8NqWeU6D0vP3x-3l1bfX5vskcToE&usqp=CAU"
+                  width="30" alt=""> </div>
+              <div class="progress bg-secondary w-100" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
+                <div class="progress-bar bg-secondary  w-100">
+                  <div class="d-flex justify-content-center">
+                    <div class="spinner-border spinner-border-sm"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </abbr>
+          <abbr title="Bootstrap">
+            <div class="d-flex align-items-center gap-2">
+              <div><img src="https://brandlogos.net/wp-content/uploads/2021/09/bootstrap-logo.png" width="30" alt="">
+              </div>
+              <div class="progress bg-secondary w-100" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
+                <div class="progress-bar progress-bar-striped bg-success w-100"><b>100%</b></div>
+              </div>
+            </div>
+          </abbr>
+        </div>
+
+        <br>
+
+        <div data-aos="flip-left" data-aos-duration="1000"
+          class="container skill3 w-sm-100 w-lg-75 rounded-3 d-flex flex-column gap-4"
+          style="background-color: rgba(75, 74, 74, 0.3);"><b data-aos="flip-left" data-aos-duration="1000"
+            class="text-center">Tools</b>
+          <abbr title="Git">
+            <div class="d-flex align-items-center gap-2">
+              <div><img src="https://cdn.freebiesupply.com/logos/large/2x/git-icon-logo-png-transparent.png" width="30"
+                  alt=""></div>
+              <div class="progress bg-secondary w-100" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
+                <div class="progress-bar progress-bar-striped bg-success w-100"><b>100%</b></div>
+              </div>
+            </div>
+          </abbr>
+          <abbr title="Github">
+            <div class="d-flex align-items-center gap-2">
+              <div><img
+                  src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/GitHub_Invertocat_Logo.svg/800px-GitHub_Invertocat_Logo.svg.png"
+                  width="30" alt=""></div>
+              <div class="progress bg-seconday w-100" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
+                <div class="progress-bar progress-bar-striped bg-success w-100"><b>100%</b></div>
+              </div>
+            </div>
+          </abbr>
+          <abbr title="Figma">
+            <div class="d-flex align-items-center gap-2">
+              <div><img
+                  src="https://cdn.sanity.io/images/599r6htc/localized/46a76c802176eb17b04e12108de7e7e0f3736dc6-1024x1024.png?w=804&h=804&q=75&fit=max&auto=format"
+                  width="30" alt=""></div>
+              <div class="progress bg-secondary w-100" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
+                <div class="progress-bar bg-secondary w-100">
+                  <div class="d-flex justify-content-center">
+                    <div class="spinner-border spinner-border-sm"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </abbr>
+        </div>
+
+        <br>
+
+        <div data-aos="flip-down" data-aos-duration="1000"
+          class="container skill4 w-sm-100 w-lg-75 rounded-3 d-flex flex-column gap-4"
+          style="background-color: rgba(75, 74, 74, 0.3);"><b data-aos="flip-down" data-aos-duration="1000"
+            class="text-center">Back-End Languages</b>
+          <abbr title="Node.js">
+            <div class="d-flex align-items-center gap-2">
+              <div><img src="https://static-00.iconduck.com/assets.00/node-js-icon-454x512-nztofx17.png" width="30"
+                  alt=""></div>
+              <div class="progress bg-secondary w-100" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
+                <div class="progress-bar bg-secondary w-100">
+                  <div class="d-flex justify-content-center">
+                    <div class="spinner-border  spinner-border-sm"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </abbr>
+          <abbr title="Python">
+            <div class="d-flex align-items-center gap-2">
+              <div><img
+                  src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/1869px-Python-logo-notext.svg.png"
+                  width="30" alt=""></div>
+              <div class="progress bg-secondary w-100" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
+                <div class="progress-bar progress-bar-striped progress-bar-animated bg-danger w-25"><b>30%</b></div>
+              </div>
+            </div>
+          </abbr>
+          <abbr title="PHP - Personal Home Page Tools.">
+            <div class="d-flex align-items-center gap-2">
+              <div><img
+                  src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/PHP-logo.svg/2560px-PHP-logo.svg.png"
+                  width="30" alt=""></div>
+              <div class="progress bg-secondary w-100" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
+                <div class="progress-bar bg-secondary w-100">
+                  <div class="d-flex justify-content-center">
+                    <div class="spinner-border spinner-border-sm"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </abbr>
+        </div>
+
+        <br>
+
+        <div data-aos="flip-right" data-aos-duration="1000"
+          class="container skill5 w-sm-100 w-lg-75 rounded-3 d-flex flex-column mb-4 gap-4"
+          style="background-color: rgba(75, 74, 74, 0.3);"><b data-aos="flip-right" data-aos-duration="1000"
+            class="text-center">Databases</b>
+          <abbr title="MySQL">
+            <div class="d-flex align-items-center gap-2">
+              <div><img src="https://iconape.com/wp-content/files/mg/80630/svg/mysql-4.svg" width="30" alt=""></div>
+              <div class="progress bg-secondary w-100" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
+                <div class="progress-bar bg-secondary w-100">
+                  <div class="d-flex justify-content-center">
+                    <div class="spinner-border spinner-border-sm"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </abbr>
+          <abbr title="MongoDB-Mongo DataBase or Mongolian Database">
+            <div class="d-flex align-items-center gap-2">
+              <div><img
+                  src="https://w7.pngwing.com/pngs/956/695/png-transparent-mongodb-original-wordmark-logo-icon-thumbnail.png"
+                  width="30" alt=""></div>
+              <div class="progress bg-secondary w-100" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
+                <div class="progress-bar bg-secondary w-100">
+                  <div class="d-flex justify-content-center">
+                    <div class="spinner-border spinner-border-sm"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </abbr>
+        </div>
+      </div>
+    </div>
+    <div id="Work" class="text-white container">
+      <div data-aos="zoom-in" class="text-center pb-3 fw-bolder fs-2"
+        style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; color: #F57D1F;">
+        Projects</div>
+
+      <div class="projectphoto1">
+        <div data-aos="fade-down-right" class="heading">Project ChronoSync</div>
+        <div class="project">
+          <div data-aos="zoom-out" id="carouselExample" class="carousel slide col-6" data-bs-ride="carousel">
+            <div class="carousel-indicators " style="background-color: rgba(0, 0, 0, 0.2); border-radius: 10px;">
+              <button type="button" data-bs-target="#carouselExample " data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExample " data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExample " data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+              <button type="button" data-bs-target="#carouselExample " data-bs-slide-to="3"
+                aria-label="Slide 4"></button>
+              <button type="button" data-bs-target="#carouselExample " data-bs-slide-to="4"
+                aria-label="Slide 5"></button>
+              <button type="button" data-bs-target="#carouselExample " data-bs-slide-to="5"
+                aria-label="Slide 6"></button>
+              <button type="button" data-bs-target="#carouselExample " data-bs-slide-to="6"
+                aria-label="Slide 7"></button>
+              <button type="button" data-bs-target="#carouselExample " data-bs-slide-to="7"
+                aria-label="Slide 8"></button>
+              <button type="button" data-bs-target="#carouselExample " data-bs-slide-to="8"
+                aria-label="Slide 9"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="for github projrcts/p1 1.png" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="for github projrcts/p1 2.png" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="for github projrcts/p1 3.png" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="for github projrcts/p1 final input.png" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="for github projrcts/p1 late final.png" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="for github projrcts/p1 final before.png" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="for github projrcts/p1 not done .png" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="for github projrcts/p1 no date final.png" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="for github projrcts/p1 last.png" class="d-block w-100" alt="...">
+              </div>
+            </div>
+            <button class="carousel-control-prev carousel-dark" type="button" data-bs-target="#carouselExample"
+              data-bs-slide="prev">
+              <span class="carousel-control-prev-icon " aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next carousel-dark" type="button" data-bs-target="#carouselExample"
+              data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+          <span data-aos="zoom-out-left" class="content col-lg-4">
+            <ul class="">
+              <li class="">Tracking task completion times</li>
+              <li class="">Identifying workflow bottlenecks</li>
+              <li class="">Prioritizing effectively</li>
+              <li class="">Tracking long-term goals</li>
+            </ul>
+          </span>
+        </div>
+      </div><br>
+
+      <div class="projectphoto1 ">
+        <span data-aos="fade-down-left" class="project3 d-flex justify-content-lg-end heading">Portofolio</span>
+
+        <div class="project2 d-flex justify-content-lg-around align-items-lg-center" style="">
+
+          <span data-aos="zoom-out-right" class="content col-lg-4">
+            <ul class="">
+              <li class="">Responsive Web Desighn</li>
+              <li class="">API Fetch</li>
+              <li class="">Carousel Implementation</li>
+              <li class="">Ultimate Hover, Animations and Transitions</li>
+            </ul>
+          </span>
+          <div data-aos="zoom-out" id="carouselExample1" class="carousel slide col-lg-6" data-bs-ride="carousel">
+            <div class="carousel-indicators" style="background-color: rgba(0, 0, 0, 0.2); border-radius: 10px;">
+              <button type="button" data-bs-target="#carouselExample1 " data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExample1 " data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExample1 " data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+              <button type="button" data-bs-target="#carouselExample1 " data-bs-slide-to="3"
+                aria-label="Slide 4"></button>
+              <button type="button" data-bs-target="#carouselExample1 " data-bs-slide-to="4"
+                aria-label="Slide 5"></button>
+
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="for github projrcts/p2 1.png" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="for github projrcts/p2 2.png" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="for github projrcts/p2 3.png" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="for github projrcts/p2 4.png" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="for github projrcts/p2 5.png" class="d-block w-100" alt="...">
+              </div>
+            </div>
+            <button class="carousel-control-prev carousel-dark" type="button" data-bs-target="#carouselExample1"
+              data-bs-slide="prev">
+              <span class="carousel-control-prev-icon " aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next carousel-dark" type="button" data-bs-target="#carouselExample1"
+              data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+      </div><br>
+
+      <div class="projectphoto1">
+        <div data-aos="fade-down-right" class="heading">Project ChronoSync</div>
+        <div class="project">
+
+          <div data-aos="zoom-out" id="carouselExample2" class="carousel slide col-6" data-bs-ride="carousel">
+            <div class="carousel-indicators" style="background-color: rgba(0, 0, 0, 0.2); border-radius: 10px;">
+              <button type="button" data-bs-target="#carouselExample2 " data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExample2 " data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExample2 " data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="for github projrcts/p3 1.png" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="for github projrcts/p3 2.png" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="for github projrcts/p3 3.png" class="d-block w-100" alt="...">
+              </div>
+            </div>
+            <button class="carousel-control-prev carousel-dark" type="button" data-bs-target="#carouselExample2"
+              data-bs-slide="prev">
+              <span class="carousel-control-prev-icon " aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next carousel-dark" type="button" data-bs-target="#carouselExample2"
+              data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+          <span data-aos="zoom-out-left" class="content col-lg-4">
+            <ul class="">
+              <li class="">Accuracy and Timeliness of Data
+              </li>
+              <li class="">User Interface and Experience </li>
+              <li class="">Additional Features and Personalization </li>
+              <li class="">Data Sources and Transparency </li>
+            </ul>
+          </span>
+        </div>
+      </div><br>
+
+
+    </div>
+
+    <div id="Contact" class="text-white" style="position: relative; height: fit-content;">
+      <div class="container pt-lg-2">
+        <div data-aos="zoom-in" class="text-center fw-bold fs-2"
+          style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; color: #F57D1F;">
+          Contact</div>
+        <div class="content gap-3">
+          <div data-aos="fade-down-right" class="text-center">"Let's build something incredible together."</div>
+          <div data-aos="fade-down-left" class="text-center "> "Looking for a developer for your project? Let's
+            talk!"</div>
+          <div data-aos="fade-up-right" class="text-center "> "Need help with front-end development? I'm your guy."
+          </div>
+          <div data-aos="fade-up-left" class="text-center ">"I'm open to freelance projects for startups and growing
+            businesses."
+          </div>
+        </div><br>
+        <div data-aos="zoom-in" class=" d-flex justify-content-center align-items-center gap-2 ">
+          <i class="fa-regular fa-envelope display-3"></i>
+          <a class=" text-decoration-none d-flex align-items-center " href="mailto:kumardeepak59422@gmail.com"><span
+              class="fs-5 fw-bold">kumardeepak59422@gmail.com</span></a>
+        </div>
+        <h3 data-aos="zoom-out" data-aos-duration="2000" class="text-center"> For more information<br><small
+            class="text-success">91-9025454148</small></h3>
+        <br>
+
+        <div data-aos="flip-down" data-aos-offset="0" class="container mt-3 d-flex justify-content-around ">
+          <a href="https://www.linkedin.com/in/deepak-05dktopg/"> <i class="fa-brands fa-linkedin display-3"></a></i>
+          <a href="https://www.instagram.com/prime_dk_05?igsh=eDZzdWlsYnlyZHNm"><i
+              class="fa-brands fa-square-instagram display-3"></a></i>
+          <a href="https://www.linkedin.com/in/deepak-05dktopg/"><i class="fa-brands fa-x-twitter display-3"></a></i>
+          <a href="https://github.com/deepak-05dktopG/"><i class="fa-brands fa-github display-3"></a></i>
+        </div>
+      </div><br>
+      <marquee data-aos="zoom-in" data-aos-offset="0" behavior="" direction="" class="h3 fst-italic fw-bolder text-white ">I'm actively
+        seeking internship
+        opportunities to learn from experienced professionals and contribute my skills. If you're looking for a
+        passionate
+        and quick learner with a strong foundation in web development, let's connect!</marquee>
+  </main>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+
+
+</body>
+
+
+
+</html>
