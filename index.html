@@ -19,7 +19,7 @@
 
   <style>
     body {
-      background-color:black;
+      background-color: black;
       position: relative;
     }
 
@@ -393,8 +393,13 @@
     @media (max-width: 575px) {
 
       body {
-       background-color: black;
-       
+        background-color: black;
+
+      }
+    
+
+      .quote {
+        font-size: small;
       }
 
       svg {
@@ -548,40 +553,7 @@
         transition: .7s ease-in-out;
       }
 
-      #Aboutme .span1:hover {
-        color: white;
-        font-size: 25px;
-        padding-top: 5px;
-        transition: .3s ease-in-out;
-      }
-
-      #Aboutme .span2:hover {
-        color: white;
-        font-size: 25px;
-        padding-top: 5px;
-        transition: .3s ease-in-out;
-      }
-
-      #Aboutme .span3:hover {
-        color: white;
-        font-size: 25px;
-        padding-top: 5px;
-        transition: .3s ease-in-out;
-      }
-
-      #Aboutme .span4:hover {
-        color: white;
-        font-size: 25px;
-        padding-top: 5px;
-        transition: .3s ease-in-out;
-      }
-
-      #Aboutme .span5:hover {
-        color: white;
-        font-size: 25px;
-        padding-top: 5px;
-        transition: .3s ease-in-out;
-      }
+     
 
       #Skills {
         font-size: larger;
@@ -722,13 +694,7 @@
         transition: .6s ease-in-out;
       }
 
-      .projectphoto1 .content:hover {
-        line-height: 60px;
-        font-weight: 400;
-        font-size: larger;
-        transition: .3s ease-in-out;
-
-      }
+     
 
 
       #Contact .content {
@@ -790,9 +756,9 @@
 
 <body class="" id="body">
 
-  <div id="quote" class=" fw-bold text-center h3 py-2 rounded-2"
+  <div id="quote" class="fw-bold text-center h3 rounded-2"
     style="background-image: linear-gradient(to right bottom, #ff094e, #1e07e8,#2685f1, #f10fa2); font-family: 'Arial Narrow', Arial, sans-serif;  color: #ffe414;">
-    <p data-aos="fade-right" data-aos-duration="1000"> Websites that convert, experiences that
+    <p data-aos="fade-right" data-aos-duration="1000"> Websites that convert experiences that
       delight.</p>
   </div>
   <header class="sticky-top">
@@ -1296,7 +1262,8 @@
           <a href="https://github.com/deepak-05dktopG/"><i class="fa-brands fa-github display-3"></a></i>
         </div>
       </div><br>
-      <marquee data-aos="zoom-in" data-aos-offset="0" behavior="" direction="" class="h3 fst-italic fw-bolder text-white ">I'm actively
+      <marquee data-aos="zoom-in" data-aos-offset="0" behavior="" direction=""
+        class="h3 fst-italic fw-bolder text-white ">I'm actively
         seeking internship
         opportunities to learn from experienced professionals and contribute my skills. If you're looking for a
         passionate
@@ -1324,6 +1291,12 @@
 
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script>
+    const quote = document.getElementById("quote");
+    fetch('https://api.quotable.io/random')
+      .then(response => response.json())
+      .then(data => quote.innerHTML = data.content
+      )
+      .catch(error => console.error('Error:', error));
     AOS.init();
   </script>
 
