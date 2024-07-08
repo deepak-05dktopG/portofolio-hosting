@@ -19,7 +19,7 @@
 
   <style>
     body {
-      background-color: black;
+      background-color:black;
       position: relative;
     }
 
@@ -76,6 +76,13 @@
       transition: .5s ease-in-out;
     }
 
+    #Start span:hover {
+      transition: .3s ease-in-out;
+      font-size: 35px;
+      text-shadow:
+        0px 0px 10px rgba(255, 255, 255, 0.96);
+    }
+
 
     #Start img {
       width: 250px;
@@ -111,9 +118,6 @@
         0px 0px 55px rgba(88, 242, 28, 0.959),
         0px 0px 65px rgba(88, 242, 28, 0.959);
 
-    }
-    #Start .intro{
-      line-height: 100%;
     }
 
     #Aboutme {
@@ -164,10 +168,41 @@
       transition: .7s ease-in-out;
     }
 
+    #Aboutme .span1:hover {
+      color: white;
+      font-size: 25px;
+      padding-top: 10px;
+      transition: .3s ease-in-out;
+    }
 
+    #Aboutme .span2:hover {
+      color: white;
+      font-size: 25px;
+      padding-top: 10px;
+      transition: .3s ease-in-out;
+    }
 
+    #Aboutme .span3:hover {
+      color: white;
+      font-size: 25px;
+      padding-top: 10px;
+      transition: .3s ease-in-out;
+    }
 
-   
+    #Aboutme .span4:hover {
+      color: white;
+      font-size: 25px;
+      padding-top: 10px;
+      transition: .3s ease-in-out;
+    }
+
+    #Aboutme .span5:hover {
+      color: white;
+      font-size: 25px;
+      padding-top: 10px;
+      transition: .3s ease-in-out;
+    }
+
     #Skills {
       font-size: larger;
       padding-top: 50px;
@@ -299,7 +334,13 @@
 
     }
 
+    .projectphoto1 .content:hover {
+      line-height: 60px;
+      font-weight: 400;
+      font-size: larger;
+      transition: .3s ease-in-out;
 
+    }
 
 
     #Contact .content {
@@ -352,13 +393,7 @@
     @media (max-width: 575px) {
 
       body {
-        background-color: black;
-
-      }
-
-
-      .quote {
-        font-size: small;
+       background-color: black;
       }
 
       svg {
@@ -414,18 +449,16 @@
         transition: .5s ease-in-out;
         font-size: 20px;
       }
-
       #Start span:hover {
-        transition: .3s ease-in-out;
-        text-shadow:
-          0px 0px 10px rgba(255, 255, 255, 0.96);
+        transition: .5s ease-in-out;
+        font-size: 20px;
       }
+
+      
 
       #Start .intro {
         margin: 80px 0px 0px 30px;
-        font-size: 20px;
-        line-height: 90%;
-        width: 100%;
+        line-height: 20px;
       }
 
 
@@ -512,7 +545,48 @@
         padding-top: 5px;
         transition: .7s ease-in-out;
       }
+      #Aboutme span:hover {
+        color: white;
+        line-height: 30px;
+        padding-top: 1+0px;
+        transition: .7s ease-in-out;
 
+      }
+
+      #Aboutme .span1:hover {
+        color: white;
+        font-size: 20px;
+        padding-top: 10px;
+        transition: .7s ease-in-out;
+      }
+
+      #Aboutme .span2:hover {
+        color: white;
+        font-size: 20px;
+        padding-top: 5px;
+        transition: .7s ease-in-out;
+      }
+
+      #Aboutme .span3:hover {
+        color: white;
+        font-size: 20px;
+        padding-top: 5px;
+        transition: .7s ease-in-out;
+      }
+
+      #Aboutme .span4:hover {
+        color: white;
+        font-size: 20px;
+        padding-top: 5px;
+        transition: .7s ease-in-out;
+      }
+
+      #Aboutme .span5:hover {
+        color: white;
+        font-size: 20px;
+        padding-top: 5px;
+        transition: .7s ease-in-out;
+      }
 
 
       #Skills {
@@ -648,7 +722,13 @@
       }
 
       .projectphoto1 .content {
-        line-height: px;
+        line-height: 50px;
+        font-weight: 200;
+        font-size: large;
+        transition: .6s ease-in-out;
+      }
+      .projectphoto1 .content:hover {
+        line-height: 50px;
         font-weight: 200;
         font-size: large;
         transition: .6s ease-in-out;
@@ -716,16 +796,16 @@
 
 <body class="" id="body">
 
-  <div id="quote" class="fw-bold fw-sm-none text-center rounded-2"
+  <div id="quote" class=" fw-bold text-center h4  rounded-2"
     style="background-image: linear-gradient(to right bottom, #ff094e, #1e07e8,#2685f1, #f10fa2); font-family: 'Arial Narrow', Arial, sans-serif;  color: #ffe414;">
-    <p data-aos="fade-right" data-aos-duration="2000"> Websites that convert experiences that
+    <p data-aos="fade-right" data-aos-duration="1000"> Websites that convert, experiences that
       delight.</p>
   </div>
   <header class="sticky-top">
     <nav class=" sticky-top">
       <div id="navbar" class="navbar  rounded-bottom-5 navbar-expand-md"
         style="background-color: rgba(0, 0, 0, 0.3); backdrop-filter: blur(10px);  border-bottom:2px solid #F57D1F;">
-        <div class="heading ms-md-5 ms-3 h4  navbar-brand  fw-bold" style="" data-aos="fade-right" data-aos-offset="0" data-aos-duration="1000">
+        <div class="heading ms-md-5 ms-3 h4  navbar-brand  fw-bold" style="" data-aos="fade-right" data-aos-offset="0">
           FrontEnd developer</div>
         <button class="navbar-toggler btn me-md-5 me-3" style="border:1px solid #F57D1F;" data-bs-toggle="collapse"
           data-bs-target=".collapse" aria-controls="collapse" aria-expanded="false">
@@ -735,19 +815,19 @@
           <ul class="navbar-nav d-flex flex-row  justify-content-around ms-auto mt-md-0 ">
             <li class="nav-item  px-lg-5 px-md-4 ">
               <a class="nav-link" href="#Aboutme"><span class="btn btn-outline-light btn-sm"
-                  style="border:1px solid #F57D1F;" data-aos="zoom-in" data-aos-duration="1000"> About me</span></a>
+                  style="border:1px solid #F57D1F;" data-aos="flip-right"> About me</span></a>
             </li>
             <li class="nav-item px-lg-5 px-md-4 ">
               <a class="nav-link" href="#Skills"><span class="btn btn-outline-light btn-sm"
-                  style="border:1px solid #F57D1F;"data-aos="zoom-in" data-aos-duration="500"> Skills</span></a>
+                  style="border:1px solid #F57D1F;" data-aos="flip-up"> Skills</span></a>
             </li>
             <li class="nav-item px-lg-5 px-md-4 ">
               <a class="nav-link" href="#Work"><span class="btn btn-outline-light btn-sm"
-                  style="border:1px solid #F57D1F;" data-aos="zoom-in" data-aos-duration="1200"> Work</span></a>
+                  style="border:1px solid #F57D1F;" data-aos="flip-right"> Work</span></a>
             </li>
             <li class="nav-item px-lg-5 px-md-4">
               <a class="nav-link" href="#Contact"><span class="btn btn-outline-light btn-sm"
-                  style="border:1px solid #F57D1F;"data-aos="zoom-in" data-aos-duration="1500"> Contact</span></a>
+                  style="border:1px solid #F57D1F;" data-aos="flip-down"> Contact</span></a>
             </li>
           </ul>
         </div>
@@ -756,18 +836,18 @@
     </nav>
   </header>
 
-  <main class="d-flex flex-column">
+  <main class="container d-flex flex-column">
     <div id="Start" class="">
-      <div class="intro text-white" style="" >
-        <div class="" data-aos="fade-left" data-aos-duration="1500" data-aos-delay="300" data-aos-once="false">Aspiring B.Tech Student</div><br><br>
-        <div class="" data-aos="fade-left" data-aos-duration="1500" data-aos-delay="600" data-aos-once="false"> Seeking Dynamic Internship & Part-Time Roles </div><br><br>
-        <div class="" data-aos="fade-left" data-aos-duration="1500" data-aos-delay="900" data-aos-once="false"> Ready to Learn and Contribute</div><br><br>
-        <div class="" style="" width="" data-aos="fade-left" data-aos-delay="1200" data-aos-duration="1500" data-aos-once="false"> As a <span class="role" style="">FrontEnd Developer. . . .
-          </div>
+      <div class="intro text-white" style="" data-aos="fade-right" data-aos-duration="1000" data-aos-once="false">
+        <span class="" data-aos="fade-left">Aspiring B.Tech Student</span><br><br>
+        <span class=""> Seeking Dynamic Internship & Part-Time Roles </span><br><br>
+        <span class=""> Ready to Learn and Contribute</span><br><br>
+        <span class="" style="" width=""> As a <span class="role" style="">FrontEnd Developer. . . .
+          </span>
 
       </div>
-      <div data-aos="zoom-in-up" data-aos-duration="3000" >
-        <img src="for github projrcts/deepak.jpg" class="" style="border-radius: 31% 69% 23% 77% / 66% 18% 82% 34%; border: 1px solid #43e443;
+      <div>
+        <img src="for github projrcts/deepak.jpg" data-aos="zoom-out" data-aos-duration="1000" class="" style="border-radius: 31% 69% 23% 77% / 66% 18% 82% 34%; border: 1px solid #43e443;
              box-shadow: 0px 0px 50px 0px rgba(34, 245, 48, 0.911),
     0px 2px 4px rgba(248, 19, 19, 0.933),
     0px 4px 8px rgba(84, 255, 49, 0.919),
@@ -786,7 +866,7 @@
             user-friendly
             and impactful web experiences.</div><br>
 
-          <span data-aos="fade-left" class="span3"> I'm drawn to clean, minimalist designs where every element has a
+          <span data-aos="fade-right" class="span3"> I'm drawn to clean, minimalist designs where every element has a
             purpose. I'm currently
             diving deep
             into
@@ -797,7 +877,7 @@
             what I'm capable
             of!</span><br>
 
-          <span data-aos="fade-left" class="span5">I'm actively seeking internship opportunities to learn from
+          <span data-aos="fade-right" class="span5">I'm actively seeking internship opportunities to learn from
             experienced professionals and
             contribute my
             skills. If you're looking for a passionate and quick learner with a strong foundation in web development,
@@ -806,7 +886,7 @@
       </div>
     </div>
 
-    <div id="Skills" class=" font-monospace  text-white" style="position: relative;">
+    <div id="Skills" class="container font-monospace  text-white" style="position: relative;">
       <div data-aos="zoom-in" class="text-center fw-bold fs-2 pt-3"
         style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; color: #F57D1F;">Languages
       </div>
@@ -883,7 +963,7 @@
 
         <br>
 
-        <div data-aos="flip-left" data-aos-duration="1000"
+        <div data-aos="flip-up" data-aos-duration="1000"
           class="container skill3 w-sm-100 w-lg-75 rounded-3 d-flex flex-column gap-4"
           style="background-color: rgba(75, 74, 74, 0.3);"><b data-aos="flip-left" data-aos-duration="1000"
             class="text-center">Tools</b>
@@ -1008,7 +1088,7 @@
         Projects</div>
 
       <div class="projectphoto1">
-        <div data-aos="fade-down-right" class="heading">Project ChronoSync</div>
+        <div data-aos="fade-down" class="heading">Project ChronoSync</div>
         <div class="project">
           <div data-aos="zoom-out" id="carouselExample" class="carousel slide col-6" data-bs-ride="carousel">
             <div class="carousel-indicators " style="background-color: rgba(0, 0, 0, 0.2); border-radius: 10px;">
@@ -1071,7 +1151,7 @@
               <span class="visually-hidden">Next</span>
             </button>
           </div>
-          <span data-aos="zoom-out-left" class="content col-lg-4">
+          <span data-aos="zoom-out" class="content col-lg-4">
             <ul class="">
               <li class="">Tracking task completion times</li>
               <li class="">Identifying workflow bottlenecks</li>
@@ -1083,11 +1163,11 @@
       </div><br>
 
       <div class="projectphoto1 ">
-        <span data-aos="fade-down-left" class="project3 d-flex justify-content-lg-end heading">Portofolio</span>
+        <span data-aos="fade-down" class="project3 d-flex justify-content-lg-end heading">Portofolio</span>
 
         <div class="project2 d-flex justify-content-lg-around align-items-lg-center" style="">
 
-          <span data-aos="zoom-out-right" class="content col-lg-4">
+          <span data-aos="zoom-out" class="content col-lg-4">
             <ul class="">
               <li class="">Responsive Web Desighn</li>
               <li class="">API Fetch</li>
@@ -1141,7 +1221,7 @@
       </div><br>
 
       <div class="projectphoto1">
-        <div data-aos="fade-down-right" class="heading">Weather Prediction </div>
+        <div data-aos="fade-down" class="heading">Project ChronoSync</div>
         <div class="project">
 
           <div data-aos="zoom-out" id="carouselExample2" class="carousel slide col-6" data-bs-ride="carousel">
@@ -1175,7 +1255,7 @@
               <span class="visually-hidden">Next</span>
             </button>
           </div>
-          <span data-aos="zoom-out-left" class="content col-lg-4">
+          <span data-aos="zoom-out" class="content col-lg-4">
             <ul class="">
               <li class="">Accuracy and Timeliness of Data
               </li>
@@ -1192,23 +1272,23 @@
 
     <div id="Contact" class="text-white" style="position: relative; height: fit-content;">
       <div class="container pt-lg-2">
-        <div data-aos="zoom-in" class="text-center fw-bold fs-2"
+        <div data-aos="zoom-in" data-aos-delay="100" class="text-center fw-bold fs-2"
           style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; color: #F57D1F;">
           Contact</div>
         <div class="content gap-3">
-          <div data-aos="fade-down-right" class="text-center">"Let's build something incredible together."</div>
-          <div data-aos="fade-down-left" class="text-center "> "Looking for a developer for your project? Let's
+          <div data-aos="fade-up" data-aos-delay="200" class="text-center">"Let's build something incredible together."</div>
+          <div data-aos="fade-up" data-aos-delay="200" class="text-center "> "Looking for a developer for your project? Let's
             talk!"</div>
-          <div data-aos="fade-up-right" class="text-center "> "Need help with front-end development? I'm your guy."
+          <div data-aos="fade-up" data-aos-delay="200" class="text-center "> "Need help with front-end development? I'm your guy."
           </div>
-          <div data-aos="fade-up-left" class="text-center ">"I'm open to freelance projects for startups and growing
+          <div data-aos="fade-up" data-aos-delay="200" class="text-center ">"I'm open to freelance projects for startups and growing
             businesses."
           </div>
         </div><br>
         <div data-aos="zoom-in" class=" d-flex justify-content-center align-items-center gap-2 ">
           <i class="fa-regular fa-envelope display-3"></i>
           <a class=" text-decoration-none d-flex align-items-center " href="mailto:kumardeepak59422@gmail.com"><span
-              class="fs-5 fw-bold">kumardeepak59422@gmail.com</span></a>
+              class=" fw-bold">kumardeepak59422@gmail.com</span></a>
         </div>
         <h3 data-aos="zoom-out" data-aos-duration="2000" class="text-center"> For more information<br><small
             class="text-success">91-9025454148</small></h3>
@@ -1222,13 +1302,13 @@
           <a href="https://github.com/deepak-05dktopG/"><i class="fa-brands fa-github display-3"></a></i>
         </div>
       </div><br>
-      <marquee data-aos="zoom-in" data-aos-offset="0" behavior="" direction=""
-        class="h3 fst-italic fw-bolder text-white ">I'm actively
-        seeking internship
-        opportunities to learn from experienced professionals and contribute my skills. If you're looking for a
-        passionate
-        and quick learner with a strong foundation in web development, let's connect!</marquee>
-  </main>
+</main>
+<marquee data-aos="zoom-in" data-aos-offset="0" behavior="" direction="" class="h3 fst-italic fw-bolder text-white ">I'm actively
+  seeking internship
+  opportunities to learn from experienced professionals and contribute my skills. If you're looking for a
+  passionate
+  and quick learner with a strong foundation in web development, let's connect!</marquee>
+
   </div>
 
 
@@ -1251,12 +1331,6 @@
 
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script>
-    const quote = document.getElementById("quote");
-    fetch('https://api.quotable.io/random')
-      .then(response => response.json())
-      .then(data => quote.innerHTML = data.content
-      )
-      .catch(error => console.error('Error:', error));
     AOS.init();
   </script>
 
